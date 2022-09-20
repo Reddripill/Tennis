@@ -9,7 +9,7 @@
 //&display=swap&subset=cyrillic-ext
 @import "fonts";
 //</Подключаем шрифты>=======================================================================================
-
+@import "../../node_modules/swiper/swiper-bundle";
 //<Иконочные шрифты>==========================================================================================
 @import "icons";
 //</Иконочные шрифты>==========================================================================================
@@ -87,6 +87,8 @@ body {
 	}
 	&__club {
 	}
+	&__coaches {
+	}
 }
 //===================================================================================================================================
 
@@ -95,7 +97,6 @@ body {
 
 
 //<MAIN-PAGE>====================================================================================================
-
 
 .main-page {
 	position: relative;
@@ -280,8 +281,8 @@ body {
 	}
 }
 
-
 //</MAIN-PAGE>====================================================================================================
+
 
 
 
@@ -348,8 +349,9 @@ body {
 //</CORTS-BLO>====================================================================================================
 
 
-//<CLUB-BLOCK>====================================================================================================
 
+
+//<CLUB-BLOCK>====================================================================================================
 
 .club-block {
 	margin-bottom: rem(150);
@@ -476,5 +478,118 @@ body {
 	}
 }
 
-
 //</CLUB-BLOCK>====================================================================================================
+
+
+
+
+
+//<COACHES-PAGE>====================================================================================================
+
+.coaches-page {
+	margin-bottom: rem(150);
+	@media(max-width : $mobile){
+		margin-bottom: rem(80);
+	}
+	&__container {
+	}
+
+	&__head {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: rem(75);
+		@media(max-width : $mobile){
+			margin-bottom: rem(40);
+		}
+		@media(max-width : em(600)){
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	&__title {
+		@media(max-width : $mobileSmall){
+			font-size: rem(28);
+		}
+		@media(max-width : em(600)){
+			margin-bottom: rem(20);
+		}
+	}
+
+	&__arrows {
+		display: flex;
+		align-items: center;
+		gap: rem(15);
+	}
+
+	&__arrow {
+		width: rem(45);
+		height: rem(45);
+		background-color: #8D86C9;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #fff;
+		cursor: pointer;
+		&_prev {
+			&::before {
+				transform: rotate(180deg);
+			}
+		}
+
+		&_next {
+		}
+	}
+
+	&__slider {
+	}
+}
+
+.coaches-slider {
+	&__wrapper {
+	}
+
+	&__item {
+		width: prc(196, 1296);
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__picture {
+		border: 1px solid #F7ECE1;
+		height: prc(240, 382);
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: rem(25);
+		@media(max-width : em(640)){
+			max-width: rem(220);
+		}
+	}
+
+	&__image {
+		width: prc(166, 196);
+		padding-bottom: prc(240, 196);
+	}
+
+	&__content {
+		@media(max-width : em(640)){
+			max-width: rem(220);
+		}
+	}
+
+	&__name {
+		margin: 0 auto;
+	}
+
+	&__description {
+		font-size: rem(14);
+		line-height: 140%;
+		color: #333333;
+	}
+}
+
+//</COACHES-PAGE>====================================================================================================

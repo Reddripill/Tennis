@@ -10,6 +10,11 @@
 			background-color: rgba(145, 145, 148, 0.796);
 		}
 	}
+	&._scroll .header__container {
+		@media(min-width : $mobile){
+			min-height: rem(80);
+		}
+	}
 	&__wrapper {
 		position: fixed;
 		top: 0;
@@ -24,6 +29,7 @@
 		display: flex;
 		align-items: center;
 		min-height: rem(106);
+		transition: all 0.5s ease 0s;
 		@media(max-width : $mobile){
 			justify-content: space-between;
 			min-height: rem(80);

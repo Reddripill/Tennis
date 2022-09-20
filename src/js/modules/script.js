@@ -7,7 +7,7 @@ window.addEventListener('load', function (event) {
 	// ===========================================================================
 	const menuBurger = document.querySelector('.menu__burger');
 	const menuBody = document.querySelector('.menu__body');
-	const headerContainer = document.querySelector('.header__container')
+	const headerContainer = document.querySelector('.header__container');
 
 	menuBurger.addEventListener('click', function (event) {
 		if (!menuBurger.classList.contains('_active')) {
@@ -73,4 +73,5 @@ window.addEventListener('load', function (event) {
 	})
 
 	// ===========================================================================
+
 })
