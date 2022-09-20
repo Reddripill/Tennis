@@ -644,6 +644,20 @@ textarea.input {
   color: #FFFFFF;
 }
 
+._title-h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 140%;
+  color: #333333;
+}
+
+._title-h3 {
+  font-weight: 600;
+  font-size: 1.3125rem;
+  line-height: 140%;
+  color: #333333;
+}
+
 ol.counter {
   list-style-type: none;
   counter-reset: item;
@@ -1292,6 +1306,74 @@ body.ie ._ibg img {
   margin: 0 auto;
 }
 
+.club-block {
+  margin-bottom: 9.375rem;
+}
+
+.club-block__wrapper {
+  margin: 0 8.4615384615%;
+  position: relative;
+}
+
+.club-block__picture {
+  display: block;
+}
+
+.club-block__image {
+  width: 100%;
+  padding-bottom: 97.7186311787%;
+}
+
+.club-history {
+  max-width: 59.1078066914%;
+  background-color: #F7ECE1;
+  margin-left: auto;
+}
+
+.club-history__container {
+  max-width: 67.6100628931%;
+  margin: 0 9.4339622642% 0 auto;
+  padding: 4.375rem 0;
+}
+
+.club-history__title {
+  margin-bottom: 0.9722222222em;
+}
+
+.club-history__text {
+  font-size: 0.875rem;
+  line-height: 140%;
+  color: #333;
+  margin-bottom: 2.5em;
+}
+
+.club-history__text p:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.club-history__subtitle {
+  margin-bottom: 1.1904761905em;
+}
+
+.club-history__item {
+  font-size: 0.875rem;
+  line-height: 140%;
+  color: #333;
+  margin-bottom: 1.4285714286em;
+  padding-left: 1.875rem;
+  position: relative;
+}
+
+.club-history__item::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #8D86C9;
+}
+
 @media (min-width: 47.99875em) {
   .header._scroll .header__wrapper {
     border: 0;
@@ -1356,6 +1438,18 @@ body.ie ._ibg img {
   }
 }
 
+@media (min-width: 54.0625em) {
+  .club-block__picture {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 48.8847583643%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+}
+
 @media (min-width: 83.125em) {
   .header__logo {
     -webkit-box-flex: 0;
@@ -1405,6 +1499,10 @@ body.ie ._ibg img {
   .main-video {
     margin-bottom: 9.375rem;
   }
+
+  .club-history__container {
+    padding: 2.5rem 0;
+  }
 }
 
 @media (max-width: 73.4375em) {
@@ -1450,11 +1548,50 @@ body.ie ._ibg img {
   .corts-block {
     margin-bottom: 6.25rem;
   }
+
+  .club-block {
+    margin-bottom: 4.0625rem;
+  }
+
+  .club-history__container {
+    padding: 1.25rem 0;
+  }
+
+  .club-history__title {
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .club-history__text {
+    margin-bottom: 1.25rem;
+  }
+
+  .club-history__subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 0.9375rem;
+  }
 }
 
 @media (max-width: 61.5625em) {
   .footer__container {
     gap: 1.5625rem;
+  }
+}
+
+@media (max-width: 54.0625em) {
+  .club-block__image {
+    max-width: 32.875rem;
+    margin: 0 auto;
+  }
+
+  .club-history {
+    margin: 0px 0px 1.875rem 0px;
+    max-width: 100%;
+  }
+
+  .club-history__container {
+    max-width: 100%;
+    margin: 0 1.875rem;
   }
 }
 
@@ -1720,6 +1857,23 @@ body.ie ._ibg img {
 
   .corts-block {
     margin-bottom: 3.125rem;
+  }
+
+  .club-history {
+    margin: 0px 0px 1.25rem 0px;
+  }
+
+  .club-history__container {
+    margin: 0 0.9375rem;
+  }
+
+  .club-history__text {
+    font-size: 0.75rem;
+  }
+
+  .club-history__item {
+    font-size: 0.75rem;
+    padding-left: 1.25rem;
   }
 }
 
