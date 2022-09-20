@@ -3,6 +3,8 @@
 window.addEventListener('load', function (event) {
 	const body = document.querySelector('body');
 
+	// Burger
+	// ===========================================================================
 	const menuBurger = document.querySelector('.menu__burger');
 	const menuBody = document.querySelector('.menu__body');
 	const headerContainer = document.querySelector('.header__container')
@@ -40,9 +42,35 @@ window.addEventListener('load', function (event) {
 		body.classList.remove('_lock');
 		body.paddingRight = '';
 	}
+	// ===========================================================================
+
+
+	// Header Observer
+	// ===========================================================================
+
+	const headerElement = document.querySelector('.header');
+
+	function headerObserverHandler(entries) {
+		if (entries[0].isIntersecting) {
+			headerElement.classList.remove('_scroll');
+		} else {
+			headerElement.classList.add('_scroll');
+		}
+	}
+
+	let headerObserver = new IntersectionObserver(headerObserverHandler);
+	headerObserver.observe(headerElement);
+
+	// ===========================================================================
+
+
 
 	// All clicks
+	// ===========================================================================
+
 	document.addEventListener('click', function (event) {
 		let el = event.target;
 	})
+
+	// ===========================================================================
 })

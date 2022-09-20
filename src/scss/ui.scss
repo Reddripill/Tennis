@@ -12,22 +12,11 @@
 	content: "₽";
 }
 
-._main-text {
-	font-size: rem(16);
-	line-height: math.div(24, 16) * 100%;
-	letter-spacing: rem(0.1);
-	color: #000;
-}
-
-._button {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	background-color: $blueColor;
-	color: #fff;
-	font-size: rem(16);
-	line-height: math.div(24, 16) * 100%;
-	letter-spacing: rem(0.1);
+._title-h1 {
+	font-weight: 700;
+	font-size: rem(48);
+	line-height: 140%;
+	color: #FFFFFF;
 }
 
 //====================================================================================================
