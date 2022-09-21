@@ -32,9 +32,6 @@
 		transition: all 0.5s ease 0s;
 		@media(max-width : $mobile){
 			justify-content: space-between;
-			min-height: rem(80);
-		}
-		@media(max-width : $mobileSmall){
 			min-height: rem(60);
 		}
 	}
@@ -49,9 +46,6 @@
 			flex: 0 0 rem(153);
 		}
 		@media(max-width : $tablet){
-			font-size: rem(36);
-		}
-		@media(max-width : $mobileSmall){
 			font-size: rem(25);
 			flex: 0 0 rem(85);
 		}
@@ -241,7 +235,7 @@
 			height: 80px;
 			background-color: rgba(145, 145, 148, 1);
 			z-index: 2;
-			@media(max-width : $mobileSmall){
+			@media(max-width : $mobile){
 				height: rem(60);
 			}
 		}
