@@ -1567,10 +1567,56 @@ textarea.input {
 }
 
 ._title-h3 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.3125rem;
   line-height: 140%;
   color: #333333;
+}
+
+.slider-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 4.6875rem;
+}
+
+.slider-head__arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.9375rem;
+}
+
+.slider-head__arrow {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  background-color: #8D86C9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.slider-head__arrow_prev::before {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 ol.counter {
@@ -2296,52 +2342,6 @@ body.ie ._ibg img {
   margin-bottom: 9.375rem;
 }
 
-.coaches-page__head {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 4.6875rem;
-}
-
-.coaches-page__arrows {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0.9375rem;
-}
-
-.coaches-page__arrow {
-  width: 2.8125rem;
-  height: 2.8125rem;
-  background-color: #8D86C9;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #fff;
-  cursor: pointer;
-}
-
-.coaches-page__arrow_prev::before {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
 .coaches-slider__item {
   width: 15.1234567901%;
   text-align: center;
@@ -2383,6 +2383,123 @@ body.ie ._ibg img {
   font-size: 0.875rem;
   line-height: 140%;
   color: #333333;
+}
+
+.services-page {
+  margin-bottom: 9.375rem;
+}
+
+.services-page__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 3.125rem;
+}
+
+.prices-aside {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40.4615384615%;
+          flex: 0 0 40.4615384615%;
+}
+
+.prices-aside__title {
+  margin-bottom: 4.6875rem;
+}
+
+.prices-aside__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1.875rem;
+}
+
+.prices-aside__row {
+  background-color: #8D86C9;
+  padding: 0.9375rem 0.9375rem 0.9375rem 1.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 37.5rem;
+}
+
+.prices-aside__name {
+  color: #fff;
+}
+
+.prices-aside__arrow {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  color: #fff;
+  font-weight: normal;
+}
+
+.services-body {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48.9230769231%;
+          flex: 0 0 48.9230769231%;
+  min-width: 0;
+}
+
+.services-slider__item {
+  width: 39.75rem;
+}
+
+.services-slider__picture {
+  border: 1px solid #F7ECE1;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.services-slider__picture_wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 92.1383647799%;
+}
+
+.services-slider__image {
+  width: 100%;
+  padding-bottom: 42.4528301887%;
+}
+
+.services-slider__label {
+  position: absolute;
+  left: 2.5rem;
+  bottom: 1.875rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.6875rem;
+  line-height: 140%;
 }
 
 @media (min-width: 47.99875em) {
@@ -2465,6 +2582,12 @@ body.ie ._ibg img {
   }
 }
 
+@media (min-width: 76.25em) {
+  .services-slider__item {
+    height: 20.625rem;
+  }
+}
+
 @media (min-width: 83.125em) {
   .header__logo {
     -webkit-box-flex: 0;
@@ -2527,6 +2650,44 @@ body.ie ._ibg img {
 
   .club-history__container {
     padding: 2.5rem 0;
+  }
+
+  .services-page__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .prices-aside {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .services-body {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .services-slider__picture {
+    max-width: 39.75rem;
+  }
+}
+
+@media (max-width: 76.25em) {
+  .services-slider__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .services-slider__picture {
+    padding: 0.625rem 0;
   }
 }
 
@@ -2595,6 +2756,11 @@ body.ie ._ibg img {
     font-size: 1.25rem;
     margin-bottom: 0.9375rem;
   }
+
+  .prices-aside__title {
+    font-size: 1.75rem;
+    margin-bottom: 1.875rem;
+  }
 }
 
 @media (max-width: 61.5625em) {
@@ -2640,6 +2806,10 @@ body.ie ._ibg img {
 }
 
 @media (max-width: 47.99875em) {
+  .slider-head {
+    margin-bottom: 2.5rem;
+  }
+
   .header__container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -2721,8 +2891,14 @@ body.ie ._ibg img {
     margin-bottom: 5rem;
   }
 
-  .coaches-page__head {
-    margin-bottom: 2.5rem;
+  .services-page {
+    margin-bottom: 5rem;
+  }
+
+  .services-slider__label {
+    font-size: 1.125rem;
+    left: 1.25rem;
+    bottom: 0.9375rem;
   }
 }
 
@@ -2832,7 +3008,7 @@ body.ie ._ibg img {
 }
 
 @media (max-width: 37.5em) {
-  .coaches-page__head {
+  .slider-head {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2842,12 +3018,22 @@ body.ie ._ibg img {
             align-items: flex-start;
   }
 
-  .coaches-page__title {
+  .slider-head__title {
     margin-bottom: 1.25rem;
   }
 }
 
 @media (max-width: 29.99875em) {
+  .slider-head__title {
+    font-size: 1.75rem;
+  }
+
+  .slider-head__arrow {
+    width: 2.1875rem;
+    height: 2.1875rem;
+    font-size: 0.75rem;
+  }
+
   .header__container {
     min-height: 3.75rem;
   }
@@ -2925,8 +3111,18 @@ body.ie ._ibg img {
     padding-left: 1.25rem;
   }
 
-  .coaches-page__title {
-    font-size: 1.75rem;
+  .prices-aside__row {
+    padding: 0.9375rem;
+  }
+
+  .prices-aside__name {
+    font-size: 1rem;
+  }
+
+  .services-slider__label {
+    font-size: 1rem;
+    left: 0.9375rem;
+    bottom: 0.625rem;
   }
 }
 
