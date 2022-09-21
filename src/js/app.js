@@ -70,4 +70,19 @@ const servicesSwiper = new Swiper('.services-slider', {
 	},
 });
 
+const gallerySwiper = new Swiper('.gallery-slider', {
+	navigation: {
+		nextEl: '.corts-gallery__head .slider-head__arrow_next',
+		prevEl: '.corts-gallery__head .slider-head__arrow_prev'
+	},
+	watchOverflow: true,
+	slidesPerGroup: 1,
+	loop: false,
+	observer: true,
+	simulateTouch: false,
+	spaceBetween: 24,
+	simulateTouch: false,
+	modules: [Navigation, Pagination],
+});
+
 // ===========================================================================

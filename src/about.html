@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.html',{
+"title":"О клубе"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.html',{})
+		<main class="page-about">
+			<section class="page-about__section_name section-name">
+				<div class="section-name__container _container">
+					<h1 class="section-name__title _title-h1">О клубе</h1>
+				</div>
+				<div class="section-name__background section-name__background_about _ibg">
+					<img src="img/anyPage.jpg" alt="Фоновая картинка">
+				</div>
+				<div class="_gradient"></div>
+			</section>
+			<section class="page-about__gallery corts-gallery">
+				<div class="corts-gallery__container _container">
+					<div class="corts-gallery__head slider-head">
+						<h2 class="slider-head__title _title-h2">Фото кортов</h2>
+						<div class="slider-head__arrows">
+							<div class="slider-head__arrow slider-head__arrow_prev _icon-arrow"></div>
+							<div class="slider-head__arrow slider-head__arrow_next _icon-arrow"></div>
+						</div>
+					</div>
+					<div class="corts-gallery__slider gallery-slider swiper">
+						<div class="gallery-slider__wrapper swiper-wrapper">
+							<div class="gallery-slider__item swiper-slide">
+								<div class="gallery-slider__picture">
+									<div class="gallery-slider__picture_wrapper">
+										<div class="gallery-slider__image _ibg">
+											<img src="img/about/cort1.jpg" alt="Фото из галлереи кортов">
+										</div>
+										<div class="_gradient"></div>
+										<label class="gallery-slider__label">Летний корт</label>
+									</div>
+								</div>
+							</div>
+							<div class="gallery-slider__item swiper-slide">
+								<div class="gallery-slider__picture">
+									<div class="gallery-slider__picture_wrapper">
+										<div class="gallery-slider__image _ibg">
+											<img src="img/about/cort1.jpg" alt="Фото из галлереи кортов">
+										</div>
+										<div class="_gradient"></div>
+										<label class="gallery-slider__label">Летний корт</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.html',{})
+	</div>
+	<!-- @@include('_popup.html',{}) -->
+	@@include('html/_js.html',{})
+</body>
+
+</html>
