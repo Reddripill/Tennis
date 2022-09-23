@@ -74,4 +74,29 @@ window.addEventListener('load', function (event) {
 
 	// ===========================================================================
 
+	// Data-tab
+	// ===========================================================================
+
+
+	const tabElements = document.querySelectorAll('[data-tab]');
+	if (tabElements.length > 0) {
+		tabElements.forEach(tabElement => {
+			tabElement.addEventListener('click', function (event) {
+				const tabBlock = document.querySelector(tabElement.dataset.tab);
+				removeActiveDataTab();
+				event.target.classList.add('_active');
+				tabBlock.classList.add('_active');
+			})
+		})
+	}
+	function removeActiveDataTab() {
+		tabElements.forEach(tabElement => {
+			if (tabElement.classList.contains('_active')) {
+				const tabActiveBlock = document.querySelector(tabElement.dataset.tab);
+				tabElement.classList.remove('_active');
+				tabActiveBlock.classList.remove('_active');
+			}
+		})
+	}
+	// ===========================================================================
 })

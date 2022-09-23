@@ -109,6 +109,8 @@ body {
 	}
 	&__club{
 	}
+	&__rules {
+	}
 }
 //===================================================================================================================================
 
@@ -1068,3 +1070,116 @@ body {
 
 
 //</CLUB-HISTORY>====================================================================================================
+
+//<RULES-PAGE>====================================================================================================
+
+.rules-page {
+	margin-bottom: rem(120);
+	@media(max-width : $tablet){
+		margin-bottom: rem(60);
+	}
+	@media(max-width : $mobileSmall){
+		margin-bottom: rem(20);
+	}
+	&__container {
+	}
+
+	&__title {
+		margin-bottom: rem(80);
+		@media(max-width : $tablet){
+			margin-bottom: rem(50);
+		}
+	}
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		column-gap: prc(75, 1300);
+		@media(max-width : em(1110)){
+			flex-direction: column;
+		}
+	}
+
+	&__categories {
+		flex: 0 0 prc(365, 1300);
+		@media(max-width : em(1110)){
+			margin-bottom: rem(80);
+		}
+	}
+
+	&__list {
+	}
+
+	&__item {
+		cursor: pointer;
+		transition: all 0.3s ease 0s;
+		&._active {
+			margin-left: rem(30);
+			color: #8D86C9;
+		}
+		&:not(:last-child) {
+			margin-bottom: rem(40);
+		}
+		@media(max-width : $mobile){
+			font-size: rem(16);
+		}
+	}
+
+	&__content {
+	}
+}
+
+.rules-content {
+	&__column {
+		display: none;
+		&._active {
+			display: block;
+		}
+	}
+
+	&__row {
+		margin-bottom: rem(40);
+	}
+
+	&__item {
+		font-size: rem(14);
+		line-height: 140%;
+		color: #333333;
+		padding-left: rem(30);
+		position: relative;
+		&:not(:last-child) {
+			margin-bottom: rem(20);
+		}
+		&::before {
+			content:'';
+			position: absolute;
+			top: rem(8);
+			left: 0;
+			height: rem(3);
+			width: rem(15);
+			background-color: #8D86C9;
+		}
+		@media(max-width : $mobile){
+			font-size: rem(12);
+		}
+	}
+
+	&__title {
+		margin-bottom: rem(25);
+	}
+
+	&__list {
+	}
+
+	&__text {
+		font-size: rem(14);
+		line-height: 140%;
+		color: #333333;
+		margin-bottom: rem(25);
+		@media(max-width : $mobile){
+			font-size: rem(12);
+		}
+	}
+}
+
+//</RULES-PAGE>====================================================================================================

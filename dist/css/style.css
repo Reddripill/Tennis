@@ -2744,6 +2744,93 @@ body.ie ._ibg img {
   margin: 0 7.0093457944% 0 auto;
 }
 
+.rules-page {
+  margin-bottom: 7.5rem;
+}
+
+.rules-page__title {
+  margin-bottom: 5rem;
+}
+
+.rules-page__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 5.7692307692%;
+     -moz-column-gap: 5.7692307692%;
+          column-gap: 5.7692307692%;
+}
+
+.rules-page__categories {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 28.0769230769%;
+          flex: 0 0 28.0769230769%;
+}
+
+.rules-page__item {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.rules-page__item._active {
+  margin-left: 1.875rem;
+  color: #8D86C9;
+}
+
+.rules-page__item:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.rules-content__column {
+  display: none;
+}
+
+.rules-content__column._active {
+  display: block;
+}
+
+.rules-content__row {
+  margin-bottom: 2.5rem;
+}
+
+.rules-content__item {
+  font-size: 0.875rem;
+  line-height: 140%;
+  color: #333333;
+  padding-left: 1.875rem;
+  position: relative;
+}
+
+.rules-content__item:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+
+.rules-content__item::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  height: 0.1875rem;
+  width: 0.9375rem;
+  background-color: #8D86C9;
+}
+
+.rules-content__title {
+  margin-bottom: 1.5625rem;
+}
+
+.rules-content__text {
+  font-size: 0.875rem;
+  line-height: 140%;
+  color: #333333;
+  margin-bottom: 1.5625rem;
+}
+
 @media (min-width: 47.99875em) {
   .header._scroll .header__wrapper {
     border: 0;
@@ -3006,6 +3093,19 @@ body.ie ._ibg img {
   }
 }
 
+@media (max-width: 69.375em) {
+  .rules-page__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .rules-page__categories {
+    margin-bottom: 5rem;
+  }
+}
+
 @media (max-width: 68.125em) {
   .footer__contacts {
     gap: 0.625rem;
@@ -3075,6 +3175,14 @@ body.ie ._ibg img {
 
   .news-cards__text {
     font-size: 1.75rem;
+  }
+
+  .rules-page {
+    margin-bottom: 3.75rem;
+  }
+
+  .rules-page__title {
+    margin-bottom: 3.125rem;
   }
 }
 
@@ -3258,6 +3366,18 @@ body.ie ._ibg img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     row-gap: 1.25rem;
+  }
+
+  .rules-page__item {
+    font-size: 1rem;
+  }
+
+  .rules-content__item {
+    font-size: 0.75rem;
+  }
+
+  .rules-content__text {
+    font-size: 0.75rem;
   }
 }
 
@@ -3522,6 +3642,10 @@ body.ie ._ibg img {
 
   .club-history__features {
     row-gap: 1.875rem;
+  }
+
+  .rules-page {
+    margin-bottom: 1.25rem;
   }
 }
 
